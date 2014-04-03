@@ -4,12 +4,12 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <!--<div class="sidebar-item">-->
-    <!--<p>{{ site.description }}</p>-->
-  <!--</div>-->
+  <!--<div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>-->
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %} fa fa-home" href="/"></a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -20,18 +20,23 @@
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}
+              {% if node.title == "About" %}fa fa-info-circle
+              {% else if node.title == "Archives"%}fa fa-archive
+              {% else %}fa fa-file
+              {% endif %}
+              " href="{{ node.url }}" title="{{ node.title }}"></a>
         {% endif %}
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item fa fa-github" href="{{ site.github.repo }}"></a> 
+    <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
   </nav>
 
-  <div class="sidebar-item">
+  <!--<div class="sidebar-item">
     <p>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
     </p>
-  </div>
+  </div>-->
 </div>
