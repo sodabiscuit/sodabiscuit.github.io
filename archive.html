@@ -1,0 +1,23 @@
+---
+layout: page
+title: Archive
+---
+
+<div class="archive">
+    <ul>
+      {% for post in site.posts %}
+        {% unless post.next %}
+          <li class="year">{{ post.date | date: '%Y' }}</li>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+            <li class="year">{{ post.date | date: '%Y' }}</li>
+          {% endif %}
+        {% endunless %}
+        <li>
+          <time>{{ post.date | date: "%Y-%M-%d" }}</time> <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+</div>

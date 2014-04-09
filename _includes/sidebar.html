@@ -22,7 +22,7 @@
         {% if node.layout == "page" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}
               {% if node.title == "About" %}fa fa-info-circle
-              {% else if node.title == "Archives"%}fa fa-archive
+              {% else if node.title == "Archive"%}fa fa-archive
               {% else %}fa fa-file
               {% endif %}
               " href="{{ node.url }}" title="{{ node.title }}"></a>

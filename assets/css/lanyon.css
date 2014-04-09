@@ -94,9 +94,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  padding-top:    .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
 }
 .masthead-title {
@@ -206,7 +206,7 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top:  1rem;
+  top:  .5rem;
   left: 1rem;
   display: block;
   width: 2.2rem;
@@ -523,3 +523,25 @@ a.pagination-item:hover {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Archive */
+.archive ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.archive .year {
+    list-style:none;    
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+    font-size: 1.5rem;
+    color: #313131;
+    text-rendering: optimizeLegibility;
+}
+.archive time {
+    font-size:.8rem;
+    color:#9a9a9a;
+}
+
