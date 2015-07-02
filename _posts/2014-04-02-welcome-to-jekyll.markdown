@@ -19,7 +19,7 @@ print_hi('Tom')
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-#table
+##table
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -29,3 +29,9 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
+
+this is a foot note[^1]
+
+##footnotes
+
+[^1]: this is a footnote.
