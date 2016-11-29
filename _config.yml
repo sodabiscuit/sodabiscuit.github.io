@@ -1,6 +1,21 @@
+title: Twist
+tagline: 'Paper'
+description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url: http://blog.twist.im
+
+gems: [jekyll-paginate]
+paginate: 1
+
+author:
+    name: 'Yulin Ding'
+    url: https://twitter.com/sodabiscuit
+    version: 1.0.0
+    github:
+        repo: https://github.com/sodabiscuit
+        
 # Dependencies
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 kramdown:
     #extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "footnotes"]
     auto_ids: true
@@ -13,14 +28,3 @@ kramdown:
     footnote_nr: 1
     permalink: pretty
 
-    title: Twist
-    tagline: 'Paper'
-    description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-    url: http://blog.twist.im
-    author:
-        name: 'Yulin Ding'
-        url: https://twitter.com/sodabiscuit
-        paginate: 1
-        version: 1.0.0
-        github:
-            repo: https://github.com/sodabiscuit
