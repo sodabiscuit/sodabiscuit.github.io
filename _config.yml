@@ -1,26 +1,26 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:         true
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "footnotes"]
+markdown: kramdown
+highlighter: pygments
+kramdown:
+    #extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "footnotes"]
+    auto_ids: true
+    footnote_nr: 1
+    entity_output: as_char
+    toc_levels: 1..6
+    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    input: GFM
+    hard_wrap: false
+    footnote_nr: 1
+    permalink: pretty
 
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            Twist
-tagline:          'Paper'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://blog.twist.im
-
-author:
-  name:           'Yulin Ding'
-  url:            https://twitter.com/sodabiscuit
-
-paginate:         1
-
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/sodabiscuit
+    title: Twist
+    tagline: 'Paper'
+    description: 'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+    url: http://blog.twist.im
+    author:
+        name: 'Yulin Ding'
+        url: https://twitter.com/sodabiscuit
+        paginate: 1
+        version: 1.0.0
+        github:
+            repo: https://github.com/sodabiscuit
